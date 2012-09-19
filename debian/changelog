@@ -1,3 +1,9 @@
+vbox-bypass-redhat-release (0.4) precise; urgency=low
+
+  * Be case insensitive my friend ...
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 19 Sep 2012 19:35:45 +0200
+
 vbox-bypass-redhat-release (0.3) precise; urgency=low
 
   * Update to work with more VirtualBox init scripts,
