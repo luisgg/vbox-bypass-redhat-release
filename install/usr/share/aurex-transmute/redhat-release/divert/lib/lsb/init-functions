@@ -1,6 +1,8 @@
-# force 'debian' to bypass system detection in vboxballoonctrl-service init script (virtualbox)
-# special thanks to Luis Mateo's oracle installation recipe ... ;-)
-export system=debian
-
+# try to detect if we are called from "VBoxBalloonCtrl" ...
+if [ "$binary" ] && echo "$binary" |grep -q "VBoxBalloonCtrl" ; then
+	# force 'debian' to bypass system detection in vboxballoonctrl-service init script (virtualbox)
+	# special thanks to Luis Mateo's oracle installation recipe ... ;-)
+	export system=debian
+fi
 # source the original file
 . /lib/lsb/init-functions.aurex-divert
