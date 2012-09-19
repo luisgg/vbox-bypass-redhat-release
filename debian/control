@@ -1,0 +1,16 @@
+Source: vbox-bypass-redhat-release
+Section: admin
+Priority: optional
+Maintainer: Luis Antonio Garcia Gisbert <luisgg@gmail.com>
+Build-Depends: debhelper (>= 7.0)
+Standards-Version: 3.9.3
+
+Package: vbox-bypass-redhat-release
+Architecture: all
+Depends: ${misc:Depends}, aurex-transmute, lsb-base
+Description: quick an dirty trick to install virtualbox-4.2
+ Some 'hand made' modifications (by my friend Luis Mateo)
+ to install oracle, confuse system type detection in virtualbox
+ init scripts.
+ This package forces 'debian' instead of 'Red Hat' in'system'
+ internal variable of vboxballoonctrl-service init script
