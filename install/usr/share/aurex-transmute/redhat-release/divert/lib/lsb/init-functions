@@ -1,5 +1,5 @@
-# try to detect if we are called from "VBoxBalloonCtrl" ...
-if [ "$binary" ] && echo "$binary" |grep -q "VBoxBalloonCtrl" ; then
+# try to detect if we are called from "VBoxBalloonCtrl" or similar VirtualBox stuff ...
+if [ "$binary" ] && echo "$binary" |grep -q "VBox" ; then
 	# force 'debian' to bypass system detection in vboxballoonctrl-service init script (virtualbox)
 	# special thanks to Luis Mateo's oracle installation recipe ... ;-)
 	export system=debian

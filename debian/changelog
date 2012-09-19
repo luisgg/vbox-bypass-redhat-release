@@ -1,3 +1,10 @@
+vbox-bypass-redhat-release (0.3) precise; urgency=low
+
+  * Update to work with more VirtualBox init scripts,
+    not only with VBoxBalloonCtrl
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 19 Sep 2012 19:30:01 +0200
+
 vbox-bypass-redhat-release (0.2) precise; urgency=low
 
   * Try to detect "VBoxBalloonCtrl" to be less instrusive
