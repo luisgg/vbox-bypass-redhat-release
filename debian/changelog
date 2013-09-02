@@ -1,3 +1,11 @@
+vbox-bypass-redhat-release (0.5) precise; urgency=low
+
+  * Add an empty default value for ${binary} variable expansion, because
+    using an variable that is not set breaks init.d scripts that use
+    "set -u" like mdadm does.
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Mon, 02 Sep 2013 17:25:21 +0200
+
 vbox-bypass-redhat-release (0.4) precise; urgency=low
 
   * Be case insensitive my friend ...
